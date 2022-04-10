@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "0411",
-      "setup": "sudo apt install -y gauche gfortran fp-compiler default-jdk golang-go; export GOCACHE=~/.gocache; mkdir $GOCACHE; ",
+      "setup": "sudo apt install -y gauche gfortran fp-compiler default-jdk golang-go; export GOCACHE=/tmp/.gocache; mkdir -p $GOCACHE; ",
       "run": "cd 0411; make",
       "input": "",
       "output": "",
