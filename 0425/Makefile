@@ -13,9 +13,9 @@ my_factorial_py: my_factorial.py
 	python2 -c 'execfile("./my_factorial.py"); n=my_factorial_3(5); print(n);'
 	python2 -c 'execfile("./my_factorial.py"); n=my_factorial_4(5); print(n);'
 
-eval_test: eval_test.py eval_test.l eval_test.c
+eval_test: eval_test.py eval_test.rkt eval_test.c
 	-python2 -c 'execfile("./eval_test.py");'
-	racket -l lazy -e '(load "eval_test.l")'
+	racket -l lazy -e '(load "eval_test.rkt")'
 	gcc -O0 -o eval_test_O0 eval_test.c
 	./eval_test_O0
 
