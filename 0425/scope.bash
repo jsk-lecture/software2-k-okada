@@ -12,4 +12,5 @@ bar() {
 
 foo
 printf "global: a = $a\n"
+bar
 
