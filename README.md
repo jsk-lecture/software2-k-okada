@@ -30,6 +30,16 @@ git push origin main
 ```
 
 とすると変更を自分のGitHubのリポジトリにアップロードできます。
+この時，手元のリポジトリとGitHubのリポジトリの整合性が取れていない場合，
+
+```
+error: failed to push some refs to 'git@github.com:jsk-lecture/software2-<自分のgitaccount>'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+というエラーになる．`git push -f origin main`とすると，GitHub側のリポジトリを手元のリポジトリで上書きする．通常は推奨されないが，この講義だけでは利用することになる．
 
 パスワードはGitHubにログインする際のパスワードではなく，[Tokenを作成](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)し，利用します．
 
