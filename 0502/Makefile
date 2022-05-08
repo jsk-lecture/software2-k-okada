@@ -14,7 +14,8 @@ cpp:
 
 # homework
 simpson:
-	python2 -c 'execfile("./simpson.py")'
+	python2 -c 'execfile("./simpson-1.py")'
+	python2 -c 'execfile("./simpson-2.py")'
 
 double:
 	python2 -c 'execfile("./double.py"); print(double(inc))'
