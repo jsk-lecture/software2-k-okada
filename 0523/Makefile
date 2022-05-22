@@ -1,4 +1,4 @@
-all: list queue_stack search sort tree graph-search
+all: list queue_stack search sort tree graph-search homework
 
 list:
 	gcc -o list_c list.c
@@ -25,6 +25,7 @@ graph-search:
 	python ./dlfs.py
 
 ## homework
+homework: recursive_sort calc ids
 
 recursive_sort:
 	python ./recursive_sort.py
