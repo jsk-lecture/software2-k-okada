@@ -1,4 +1,4 @@
-all: rat bank accumulator
+all: rat bank accumulator sqrt
 
 rat:
 	python2 rat.py
