@@ -15,6 +15,10 @@ search:
 
 sort:
 	python ./sort.py
+	gcc -o sort-gen sort-gen.c
+	./sort-gen -n 10
+	gcc -o sort_c sort.c sortlib.c
+	./sort_c
 
 tree:
 	python ./traverse.py
