@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "0411",
-      "setup": "sudo apt install -y gauche gfortran fp-compiler default-jdk golang-go",
+      "setup": "sudo apt update -y -q && sudo apt install -y gauche gfortran fp-compiler default-jdk golang-go",
       "run": "export GOCACHE=/tmp/.gocache; mkdir -p $GOCACHE; cd 0411; make",
       "input": "",
       "output": "",
@@ -21,14 +21,34 @@
       "points": 10
     },
     {
-      "name": "0428",
-      "setup": "apt install -y python racket",
+      "name": "0425",
+      "setup": "sudo apt install -y python racket swi-prolog-nox",
       "run": "cd 0425; make",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": null
+      "points": 10
+    },
+    {
+      "name": "0502",
+      "setup": "",
+      "run": "cd 0502; make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "0509",
+      "setup": "",
+      "run": "cd 0509; make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
     }
   ]
 }
