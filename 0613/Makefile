@@ -29,6 +29,14 @@ test-gmp-cpp:
 	./test-gmp2
 
 homework:
+	gcc -o test-minus-16 test-minus-16.c
+	./test-minus-16
+	gcc -o test-float-2625 test-float-2625.c
+	./test-float-2625
+	gcc -o test-byteorder-csi test-byteorder-csi.c
+	./test-byteorder-csi
+	gcc -o test-qe test-qe.c -lm
+	./test-qe
 	python ./1system.py
 	g++ -o integrate integrate.cpp `pkg-config gsl --cflags --libs`
 	./integrate
